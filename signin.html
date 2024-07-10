@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <div class="navbar">
+            <a href="landing.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Sign In 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">New User</a>
+              </div>
+            </div>
+          </div>
+    </header>
+    <!--FORM-->
+    <div class="main">
+        <h1>iBall Portal</h1>
+        <h3>Enter your login credentials</h3>
+        <form action="">
+              <label for="first">
+                    Username:
+              </label>
+              <input type="text" 
+                     id="first" 
+                     name="first" 
+                     placeholder="Enter your Username" required>
+
+              <label for="password">
+                    Password:
+              </label>
+              <input type="password"
+                     id="password" 
+                     name="password"
+                     placeholder="Enter your Password" required>
+
+              <div class="wrap">
+                    <button type="submit"
+                            onclick="solve()">
+                          Submit
+                    </button>
+              </div>
+        </form>
+        <p>Not registered?
+              <a href="signup.html"
+                 style="text-decoration: none;">
+                    Create an account
+              </a>
+        </p>
+  </div>
+  <!--FOOTER-->
+  <footer>
+    <h3>&copy; 2024 No Name Entertainment LLC. All rights reserved.</h3>
+  </footer>
+</body>
+</html>

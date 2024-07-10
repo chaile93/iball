@@ -1,0 +1,110 @@
+body {
+    display: grid;
+    height: 100vh;
+    display:grid;
+    grid-template-areas:
+        "nav    nav    nav"
+        "empty content content"
+        "empty content2 content2"
+        "footer   footer   footer";
+    background-color: black;
+
+}
+/*GRID ITEMS**/
+header { grid-area: nav;}
+.ht { grid-area: content;}
+video { grid-area: content2;}
+footer{ grid-area: footer;}
+
+/*NAVBAR*/
+.navbar {
+    overflow: hidden;
+    background-color: #1a1a1a;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(255, 85, 6);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(255, 85, 6);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .home-text{
+    color: rgb(255, 85, 6);
+    text-shadow: 0px 2px 40px 10px orangered;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 10s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+    margin-right: -86px;
+    position: relative;
+    left: 43%;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+.footer-text{
+    color: rgb(255, 85, 6);
+    margin-right: 69%;
+    position: relative;
+    left: 35%;
+}
+video{
+    width: 1505px;
+    height: 500px;
+    position: relative;
+    left: 0%;
+    pointer-events: none;
+}
